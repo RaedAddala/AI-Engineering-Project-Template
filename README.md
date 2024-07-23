@@ -34,3 +34,16 @@ This Repository is intended to be be used as template by an AI Team to contain w
 Azure Storage, AWS Storage, Google Drive etc can be used as remote storage for the DVC.
 
 ## Guide for Using DVC alongside Git
+
+When working with huge files or any data/model file ***DO NOT USE GIT*** instead use ***DVC***.
+
+Here is how:
+
+- Add the file: `dvc add file`. example: `dvc add data/data.csv`.
+- Track changes in Git: `git add file.dvc path_to_file/.gitignore`. example: `git add data/data.csv.dvc data/.gitignore`.
+- Commit the changes in Git: `git commit -m "msg"`.
+- Uploading data: `dvc push`.
+
+Now to retrieve data here is how:
+
+- `dvc pull`.

@@ -1,0 +1,5 @@
+outs:
+- md5: bbfb83b5e0bea38d289990aeb1979781
+  size: 923542
+  hash: md5
+  path: PubChem_compound_text_DprE1_records.sdf
